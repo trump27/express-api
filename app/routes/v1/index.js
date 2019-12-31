@@ -1,6 +1,6 @@
 const router = require('express').Router()
 
-// GET  http://localhost:3000/api/v1/article/test
+// GET  http://localhost:3000/api/v1
 router.get('/', function (req, res) {
   res.json({
     success: true,
@@ -8,5 +8,4 @@ router.get('/', function (req, res) {
   })
 })
 
-// routerをモジュールとして扱う準備
 module.exports = router
