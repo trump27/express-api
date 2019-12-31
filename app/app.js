@@ -9,12 +9,15 @@ app.use(express.json())
 app.use(cors())
 app.use(morgan('dev'))
 
-// routerにルーティングの動作を書いてく
-app.get('/', function (req, res) {
-  res.json({
-    message: 'Hello,world'
-  })
-})
+const routerV1 = require('./routes/v1/')
+app.use('/api/v1/', routerV1)
+
+// // routerにルーティングの動作を書いてく
+// app.get('/', function (req, res) {
+//   res.json({
+//     message: 'Hello,world'
+//   })
+// })
 
 // routerをモジュールとして扱う準備
 module.exports = app
