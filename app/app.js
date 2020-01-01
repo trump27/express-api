@@ -7,7 +7,7 @@ const morgan = require('morgan')
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cors())
-app.use(morgan('dev'))
+app.use(morgan('short')) // format: short, dev, default
 
 app.use('/api/v1/', require('./routes/v1/'))
 

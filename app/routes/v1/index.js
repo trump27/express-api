@@ -6,6 +6,7 @@ router.get('/', function (req, res) {
     success: true,
     message: 'This is api'
   })
+  console.log('success:', true)
 })
 
 module.exports = router

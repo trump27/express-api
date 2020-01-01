@@ -1,4 +1,12 @@
-# Express api
+# Basic express api
+
+```
+yarn dev
+yarn lint
+yarn test
+```
+
+# Topic
 
 ```
 yarn global add nodemon
@@ -27,5 +35,3 @@ yarn add -D jest supertest
 # create setting
 node_modules.\.bin\jest --init
 ```
-
-###
